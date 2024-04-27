@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posture Detector 🚶</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+        .container { width: 80%; margin: 20px auto; overflow: hidden; }
+        header { background: #581515; color: #fff; padding: 20px; text-align: center; }
+        footer { background: #581515; color: #fff; text-align: center; padding: 10px; }
+        .section { margin-top: 20px; }
+        .team-section { 
+            display: flex; 
+            justify-content: space-between; /* Ensures space between the two columns */
+        }
+        .team-column {
+            display: flex;
+            flex-direction: column;
+            width: 48%; /* Each column takes slightly less than half of the space to account for margin */
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px; /* Adds space between team members */
+        }
+        .team-photo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Circular images */
+        }
+        .team-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .red-underline {
+            text-decoration: underline;
+            text-decoration-color: #581515;
+        }
+        .video-size { width: 640px; height: 360px; } /* Controlled size */
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Sensory System for Posture Correction 🦾</h1>
+        <p>We've Got Your Back! 💪</p>
+        <p>Project Done By Mostafa Kassem, Nadim Succar, Rayan Abdul Samad El Skaff, Yassmine El Fadl</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2 class="red-underline">About the Project 📖</h2>
+            <p>Poor posture, especially during extended periods of sitting, can contribute to several health issues including back pain, neck strain, and muscle stiffness. A smart posture corrector combines a traditional brace with advanced sensor technology. This innovative design detects improper posture in the neck and back, monitors the duration and frequency of maintaining proper posture, and identifies instances of leaning forward.</p>
+            <img src="postures.png" style="width: 400px; height: auto; display: block; margin: auto;">
+            <p>Our posture detector will detect those different types of wrong sitting postures using couple of sensors and electronic components. The treatment requires from the patient wearing this smart posture corrector for 20 minutes per day.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="red-underline">Hardware Design 🛠️</h2>
+            <img src="websitepic3.png" style="width: 600px; height: auto; display: block; margin: auto;">
+            <p>The components we used in our project are: IMU,x3 Flex Sensors (3 long & 1 short), Two Types of Press Buttons, x1 LED, x3 10K resistors, x1 LCD, x1 Buzzer, x1 Vibration Motor, x1 Battery, x1 DC to DC converter. Note that the height and weight affects our work where the brace's size changes accordingly.</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="red-underline">Software Design 💻</h2>
+            <p>We used Labview for calibration, in addition to Arduino IDE to write the code and test the functionalities of our system.</p>
+            <p>The code of each component was tested alone, then we combined the different code files and added the thresholds that after reaching them the Vibration Motor/LED will turn on showing a wrong posture. Plug and play calibration was implemented to ease the use of this posture corrector and fit different people who might use it.</p>    
+            <img src="ide.png" style="width: 300px; height: auto;">
+            <img src="labview.jpg" style="width: 200px; height: auto;">
+        </div>
+
+        <div class="section">
+            <h2 class="red-underline">Project Video 📹</h2>
+            <video controls class="video-size">
+                <source src="D:\AUB\Year 3\Spring Term\EECE 461\project\website\1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="section">
+            <h2 class="red-underline">Resources 📚</h2>
+            <p>You can know more about our project by checking the following attached documents!<p>
+            <ul>
+                <li><a href="d:\AUB\Year 3\Spring Term\EECE 461\project\Design_and_BOQ (2).pdf" download="Project_Final_Report">Project Final Report</a></li>
+                <li><a href="d:\AUB\Year 3\Spring Term\EECE 461\project\Design_and_BOQ (2).pdf" download="User_Manual">User Manual</a></li>
+                <li><a href="d:\AUB\Year 3\Spring Term\EECE 461\project\Design_and_BOQ (2).pdf" download="Datasheet">Datasheet</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="red-underline">Team 👥</h2>
+            <p>Kindly reach our team for any questions you have. We are more than ready to help you!<p>
+            <div class="team-section">
+                <div class="team-column">
+                    <div class="team-member">
+                        <div class="team-photo"><img src="mostafa.jpeg" alt="Mostafa Kassem"></div>
+                        <div class="team-info">
+                            <h4>Mostafa Kassem</h4>
+                            <p>Major: CCE</p>
+                            <p>Email: <a href="mailto:mik29@mail.aub.edu">mik29@mail.aub.edu</a></p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-photo"><img src="rayan .png" alt="Rayan Abdul Samad"></div>
+                        <div class="team-info">
+                            <h4>Rayan Abdul Samad El Skaff</h4>
+                            <p>Major: ECE</p>
+                            <p>Email: <a href="mailto:rra71@mail.aub.edu">rra71@mail.aub.edu</a></p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="team-column">
+                    <div class="team-member">
+                        <div class="team-photo"><img src="nadim.jpeg" alt="Nadim Succar"></div>
+                        <div class="team-info">
+                            <h4>Nadim Succar</h4>
+                            <p>Major: ECE</p>
+                            <p>Email: <a href="mailto:nks16@mail.aub.edu">nks16@mail.aub.edu</a></p>    
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-photo"><img src="yasmine.png" alt="Yassmine El Fadl"></div>
+                        <div class="team-info">
+                            <h4>Yassmine El Fadl</h4>
+                            <p>Major: ECE</p>
+                            <p>Email: <a href="mailto:yke05@mail.aub.edu">yke05@mail.aub.edu</a></p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Project for EECE 461 under the advising of Professor Imad Elhajj</p>
+    </footer>
+</body>
+</html>
